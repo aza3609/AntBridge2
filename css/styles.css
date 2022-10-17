@@ -1,0 +1,42 @@
+@import "reset.css";
+/*components*/
+@import "components/header.css";
+@import "components/footer.css";
+/*screens*/
+@import "screens/main.css";
+@import "screens/business.css";
+@import "screens/solution.css";
+@import "screens/products.css";
+@import "screens/about.css";
+@import "screens/contact.css";
+/*font*/
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+  unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+}
+@font-face {
+  font-family: "Noto Sans KR", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+  unicode-range: U+AC00-D7A3;
+}
+
+/*style*/
+* {
+  font-family: "Montserrat", "Noto Sans KR";
+}
+body {
+  width: 100vw;
+  line-height: 150%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-discription {
+  font-size: 26px;
+  color: #b6b6b6;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 80px 0px;
+  text-align: center;
+}
