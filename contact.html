@@ -62,71 +62,32 @@
           </span>
         </div>
         <div class="contact__map">
+          <!-- * 카카오맵 - 지도퍼가기 -->
+          <!-- 1. 지도 노드 -->
           <div
-            style="
-              font: normal normal 400 12px / normal dotum, sans-serif;
-              width: 780px;
-              height: 462px;
-              color: #333;
-              position: relative;
-            "
-          >
-            <div style="height: 430px">
-              <a
-                href="https://map.kakao.com/?urlX=579156.0&amp;urlY=804823.0&amp;name=%EB%8C%80%EC%A0%84%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C1184%EB%B2%88%EA%B8%B8%2011-27&amp;map_type=TYPE_MAP&amp;from=roughmap"
-                target="_blank"
-                ><img
-                  class="map"
-                  src="http://t1.daumcdn.net/roughmap/imgmap/e9ceb740d12c68640a5bfe9afd9b736fc103bf7fee4b0fb9dacd6527ef96194c"
-                  width="778px"
-                  height="428px"
-                  style="border: 1px solid #ccc"
-              /></a>
-            </div>
-            <div
-              style="
-                overflow: hidden;
-                padding: 7px 11px;
-                border: 1px solid rgba(0, 0, 0, 0.1);
-                border-radius: 0px 0px 2px 2px;
-                background-color: rgb(249, 249, 249);
-              "
-            >
-              <a
-                href="https://map.kakao.com"
-                target="_blank"
-                style="float: left"
-                ><img
-                  src="//t1.daumcdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png"
-                  width="72"
-                  height="16"
-                  alt="카카오맵"
-                  style="display: block; width: 72px; height: 16px"
-              /></a>
-              <div
-                style="
-                  float: right;
-                  position: relative;
-                  top: 1px;
-                  font-size: 11px;
-                "
-              >
-                <a
-                  target="_blank"
-                  href="https://map.kakao.com/?from=roughmap&amp;eName=%EB%8C%80%EC%A0%84%20%EC%9C%A0%EC%84%B1%EA%B5%AC%20%EC%9C%A0%EC%84%B1%EB%8C%80%EB%A1%9C1184%EB%B2%88%EA%B8%B8%2011-27&amp;eX=579156.0&amp;eY=804823.0"
-                  style="
-                    float: left;
-                    height: 15px;
-                    padding-top: 1px;
-                    line-height: 15px;
-                    color: #000;
-                    text-decoration: none;
-                  "
-                  >길찾기</a
-                >
-              </div>
-            </div>
-          </div>
+            id="daumRoughmapContainer1665985344211"
+            class="root_daum_roughmap root_daum_roughmap_landing"
+          ></div>
+
+          <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+          <script
+            charset="UTF-8"
+            class="daum_roughmap_loader_script"
+            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+          ></script>
+
+          <!-- 3. 실행 스크립트 -->
+          <script charset="UTF-8">
+            new daum.roughmap.Lander({
+              timestamp: "1665985344211",
+              key: "2c37b",
+              mapWidth: "780",
+              mapHeight: "438",
+            }).render();
+          </script>
         </div>
       </div>
     </main>
@@ -162,7 +123,7 @@
     <script>
       feather.replace();
     </script>
-    <script src="js/header.js"></script>
+    <script src="js/header-black.js"></script>
     <script src="js/copyBtn.js"></script>
   </body>
 </html>
