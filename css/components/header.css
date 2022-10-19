@@ -1,6 +1,6 @@
 header {
   display: grid;
-  width: 100%;
+  width: 100vw;
   height: 110px;
   grid-template-columns: auto 1180px auto;
   position: fixed;
@@ -63,7 +63,7 @@ header {
 .header-title__image {
   position: absolute;
   height: 480px;
-  width: 100%;
+  width: 100vw;
   object-fit: cover;
   z-index: -2;
 }
