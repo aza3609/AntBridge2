@@ -2,13 +2,13 @@
   width: 100vw;
 }
 .business__list {
-  padding: 100px 0px;
+  padding: 120px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .business__list:first-of-type {
-  padding-top: 0px;
+  padding-top: 20px;
 }
 .business__content {
   width: 1180px;
